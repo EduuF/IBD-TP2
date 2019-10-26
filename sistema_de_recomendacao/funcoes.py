@@ -1,5 +1,3 @@
-from recomendacao_usuarios import avaliacoes_usuario
-from recomendacao_filmes import avaliacoes_filmes
 from math import sqrt
 
 
@@ -44,7 +42,7 @@ def getRecomendacao(base, usuario):
     rankings.reverse()
     return rankings[0]
 
-def carrega_movielens(path='ml-100k'):
+def carrega_movielens(path='sistema_de_recomendacao/ml-100k'):
     ####Setando base de dados de filmes####
     filmes={}
     for linha in open(path + '/u.item'):
