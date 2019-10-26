@@ -1,4 +1,4 @@
-avaliacoes = {'Ana': 
+avaliacoes_usuario = {'Ana': 
 		{'Freddy x Jason': 2.5, 
 		 'O Ultimato Bourne': 3.5,
 		 'Star Trek': 3.0, 
