@@ -7,5 +7,7 @@ from sistema_de_recomendacao.funcoes import carrega_movielens ##carrega a base d
 ####################MAIN######################
 
 base = carrega_movielens() ##carrega a base de dados
-print(getRecomendacao(base, '100'))
+##print(getRecomendacao(base, '100'))
 print(getSimilares(base, '1'))
+
+print(base)
