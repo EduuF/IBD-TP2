@@ -2,12 +2,12 @@
   "name": "barebones-react-typescript-express",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "dist/server.ts",
   "scripts": {
     "watch:build": "npx webpack -w",
-    "watch:server": "nodemon dist/server.js",
+    "watch:server": "nodemon dist/server.ts",
     "dev": "npm-run-all --parallel watch:*",
-    "start": "node dist/server.js"
+    "start": "node dist/server.ts"
   },
   "keywords": [],
   "author": "",
