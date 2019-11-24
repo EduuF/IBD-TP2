@@ -37,4 +37,4 @@ packages/react-devtools-shell/dist
 node_modules/
 dist/
 public/js/app.js
-Application/src/server/config/
+Application/src/server/config/index.js
