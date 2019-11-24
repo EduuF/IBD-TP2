@@ -4,10 +4,6 @@ import DB from "./db";
 
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  res.json("OPA");
-});
-
 router.get("/api/hello", (req, res, next) => {
   res.json("World");
 });
