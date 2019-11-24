@@ -3,7 +3,7 @@
 SELECT titulo, ano_lancamento FROM filmes ORDER BY ano_lancamento DESC, titulo ASC;
 SELECT nome FROM generos ORDER BY nome ASC;
 -- 3 consultas envolvendo a junção de duas relações
-SELECT DISTINCT(titulo), ano_lancamento FROM palavras_chave NATURAL JOIN filmes WHERE descricao LIKE '%comedy%' ORDER BY ano_lancamento DESC, titulo ASC; 
+SELECT DISTINCT(titulo), ano_lancamento FROM palavras_chave NATURAL JOIN filmes WHERE descricao LIKE '%comedy%' ORDER BY ano_lancamento DESC, titulo ASC;
 SELECT DISTINCT(nome) FROM avaliacoes NATURAL JOIN usuarios WHERE data_avaliacao > '1999-12-31 23:59:59' ORDER BY nome ASC;
 SELECT DISTINCT(titulo) FROM filme_genero NATURAL JOIN filmes NATURAL JOIN generos WHERE nome = 'Fantasia' ORDER BY titulo ASC;
 -- 3 consultas envolvendo a junção de três ou mais relações
@@ -25,3 +25,7 @@ SELECT titulo, count(*) AS total_palavras_chave FROM palavras_chave NATURAL JOIN
 SELECT titulo, count(*) AS total_avaliacoes FROM avaliacoes NATURAL JOIN filmes GROUP BY id_filme ORDER BY total_avaliacoes DESC LIMIT 100;
 -- Quais gêneros de filme costumam ser melhor/pior avaliados?
 -- Há alguma relação entre a data de lançamento do filme e avaliação?
+
+
+-- HARRY POTTER ?
+SELECT titulo, ano_lancamento, COUNT(*) AS total_avaliacoes, AVG(nota) AS media_avaliacoes FROM filmes NATURAL JOIN avaliacoes WHERE titulo like '%harry potter%' GROUP BY id_filme  ORDER BY total_avaliacoes DESC,media_avaliacoes DESC, titulo ASC;
