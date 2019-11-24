@@ -1,5 +1,5 @@
 import * as mysql from "mysql";
-import config from "../config";
+import config from "../config/index";
 
 import Avaliacoes from "./avaliacoes";
 import Filmes from "./filmes";
