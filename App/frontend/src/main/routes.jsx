@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
-import Avaliacoes from "../avaliacoes/avaliacoes";
-import Filmes from "../filmes/filmes";
+import Avaliacoes from "../avaliacoes/Avaliacoes";
+import Filmes from "../filmes/Filmes";
 import FilmeGenero from "../filme_genero/FilmeGenero";
-import Generos from "../generos/generos";
+import Generos from "../generos/Generos";
 import PalavrasChave from "../palavras_chave/PalavrasChave";
 import Usuarios from "../usuarios/Usuarios";
 
