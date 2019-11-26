@@ -16,9 +16,10 @@ SELECT DISTINCT login from usuarios WHERE id_usuario IN
 SELECT DISTINCT titulo_filme FROM filmes WHERE id_filme IN (SELECT id_filme FROM filme_genero NATURAL JOIN generos WHERE nome_genero = "Fantasia")
 
 -- 6 de JOIN PARA CONSULTAS ANINHADAS
-SELECT DISTINCT titulo_filme, nota FROM filmes WHERE id_filme IN
+SELECT DISTINCT titulo_filme FROM filmes WHERE id_filme IN
 (SELECT id_filme FROM avaliacoes WHERE nota = 5 AND id_filme IN 
 (SELECT id_filme FROM filme_genero NATURAL JOIN generos WHERE nome_genero = "Romance"))
+ORDER BY titulo_filme
 
 
 -- Falta : 
